@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Langlois</title>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="icon" href="assets/img/DLogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="body-container">
+        <div class="nav">
+            <section class="nav_head">
+                <h1 class="nav_head_name">David Langlois</h1>
+                <h3 class="nav_head_title">Photography and Music</h3>
+                
+                <div class="nav_photo">
+                    <img src="assets/img/sitting.jpg" alt="David Langlois">
+                </div>
+                <div class="nav_contact">
+                    <a class="contact_link" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin icon-test contact_icon"></i></a>
+                    <a class="contact_link" href="mailto:LangloisVideo@gmail.com"><i class="fas fa-envelope-square icon-test contact_icon"></i></a>
+                </div>
+            </section>
+
+            <div class="hello_IP">
+                <p>Hello <span id="ipText"></span>! Thanks for stopping by.</p>
+                <p class="qotdPad"><span id="quoteText"></span></p>
+            </div>
+
+            <div class="nav_buttons">
+                <button class="btn btn-nav btn-about">About Me</button>
+                <button class="btn btn-nav btn-photos">Photography</button>
+                <button class="btn btn-nav btn-music">Music</button>
+            </div>
+        </div>
+
+        <section class="section-component about hidden remove-tab">
+            <div class="section_head">
+                <h2 class="section_head_title">Hi! I'm David.</h2>
+                <button class="close-btn about_close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="section_container">
+                <p class="about_info">I'm 28 years old, and I live in Boston, Massachusetts. Although I'm building this site for my CS601 course, I wanted to take this opporunity to reflect on two hobbies that I'm very passionate about: photography and music.<br>
+                <br>If you'd like to see some of my photography, navigate back to the "homepage" by clicking on the X icon in the top right corner of this container. Then, click on the "photography" button.<br>
+                <br>If you'd like a look at my vinyl collection and get some recommendations based on what I'm currently listening to, return to the homepage and click on the "Music" button.<br>
+                <br>Before you go, let me offer you a random piece of advice: <span id="adviceSpan"></span></p>
+            </div>
+        </section>
+
+        <section class="section-component photos hidden remove-tab">
+            <div class="section_head">
+                <h2 class="section_head_title">Photography</h2>
+                <button class="close-btn photos_close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="section_container photos">
+                <div class="photos_cards">
+                    <div class="card">
+                        <div class="card_head">
+                            <h4 class="card_head_title">New Zealand</h4>
+                        </div>
+                        <img class="card_image" src="assets/img/lakeroad.jpg" alt="Lake Wanaka">
+                        <div class="card_btns">
+                            <a class="btn btn--small btn-nz btn-link mr-sm">See More</a>
+                        </div>
+                        <p class="card_description">A collection of photographs taken from a week-long trip to the Otago and Fiordland regions of New Zealand, March 17-23, 2019. Specific locations include Queenstown, Te Anau, Milford Sound, Wanaka, and the areas in between.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card_head">
+                            <h4 class="card_head_title">Asia</h4>
+                        </div>
+                        <img class="card_image" src="assets/img/elephants.jpg" alt="Elephants in Thailand">
+                        <div class="card_btns">
+                            <a class="btn btn--small btn-asia btn-link mr-sm">See More</a>
+                        </div>
+                        <p class="card_description">Photographs taken from a month-long stint while working throughout Asia in 2018. Countries visited and worked in include China, Japan, Vietnam, and Thailand.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card_head">
+                            <h4 class="card_head_title">Sydney</h4>
+                        </div>
+                        <img class="card_image" src="assets/img/sydney.jpg" alt="Sydney">
+                        <div class="card_btns">
+                            <a class="btn btn--small btn-link btn-aus mr-sm">See More</a>
+                        </div>
+                        <p class="card_description">An album consisting of memories from a life that was built during a year-long residence in Sydney, Australia. Photographed landmarks include the Harbour Bridge, the Opera House, a bevy of beaches, as well as several stops outside of Sydney.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-component grids gridnz hidden remove-tab">
+            <div class="section_head section_grid">
+                <h2 class="section_head_title">New Zealand</h2>
+                <button class="close-btn grids_close close_nz"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="outer-grid">
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3eSch5escXhmCsSJDuhOGADLJAJye1ixBjYSMzU4znV700cswO8yyHSxhrGzofUxNdsFxQB5SLMPZQrwsLcvwQtL6cxBKTUYIcBChm-1nedcZBaTlsQtxMMj7pnN8uwcmO8hIJEVVqUbaIHFK4pSfBL=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3eSch5escXhmCsSJDuhOGADLJAJye1ixBjYSMzU4znV700cswO8yyHSxhrGzofUxNdsFxQB5SLMPZQrwsLcvwQtL6cxBKTUYIcBChm-1nedcZBaTlsQtxMMj7pnN8uwcmO8hIJEVVqUbaIHFK4pSfBL=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Descent into Queenstown</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3fkzaEsYNPuREY0dDaLndwc79NiC1gpszzFFMuitCaRrrPNSfHV9Iyeqi1kML9fT-q5vQt2RVECO5b_jsMD3onXb9tQEdfDW6rMW-i_BMDDDE8X6oc9-W-hdXF1zMwBg7h0qXrX_s3SybQpmtX1cJRb=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3fkzaEsYNPuREY0dDaLndwc79NiC1gpszzFFMuitCaRrrPNSfHV9Iyeqi1kML9fT-q5vQt2RVECO5b_jsMD3onXb9tQEdfDW6rMW-i_BMDDDE8X6oc9-W-hdXF1zMwBg7h0qXrX_s3SybQpmtX1cJRb=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Lake Wanaka</p></a>
+                    </div>
+                </div>
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3dOA1wM-0VgZYtka9xD2wpmY1iG2vElT7VEoWnOpgLm_xZ0O_d-he1pPqRyvqNKtndEPsCp0Fs0iWJIJ7s6d7lvDVZEEpPXo6lkiM_3Z3MMWpU257hy5Eiz6YiocaSX7k7gPgW5pocumQhwIehiVBuD=w1920-h1063-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3dOA1wM-0VgZYtka9xD2wpmY1iG2vElT7VEoWnOpgLm_xZ0O_d-he1pPqRyvqNKtndEPsCp0Fs0iWJIJ7s6d7lvDVZEEpPXo6lkiM_3Z3MMWpU257hy5Eiz6YiocaSX7k7gPgW5pocumQhwIehiVBuD=w1920-h1063-no?authuser=1" target="_blank"><p class="image-description">Milford Sound</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3cBUAmq-PxWOWqM9NWrYZWgtKDqSOx8QVQyZg9B0-Ny23J5ATFCUvz27zJEDJoLdPzDoEcJENjeVTnlmvtUiR0277nkaPRIdIFWxBiNWQk47WP21XB-aYP1wLmar9AaIjSxl2uyVrJzH3CaHTFXX5pT=w4032-h2268-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3cBUAmq-PxWOWqM9NWrYZWgtKDqSOx8QVQyZg9B0-Ny23J5ATFCUvz27zJEDJoLdPzDoEcJENjeVTnlmvtUiR0277nkaPRIdIFWxBiNWQk47WP21XB-aYP1wLmar9AaIjSxl2uyVrJzH3CaHTFXX5pT=w4032-h2268-no?authuser=1" target="_blank"><p class="image-description">Outside of the Homer Tunnel</p></a>
+                    </div>
+                </div>
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3cTcvNCao4T2kNFDE5vYecCH6FU7ucvcb_InItP5rpfoo5vOaixP07g3-sTTLXGt7-AUCBEvqa5wglAn3kxrd3c-fp0Nw2Qy5QUSs6HTWYah1tMrQhjX7i38U9qrfCn5QXkD-9cMmRLtdVS-9EVaZxQ=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3cTcvNCao4T2kNFDE5vYecCH6FU7ucvcb_InItP5rpfoo5vOaixP07g3-sTTLXGt7-AUCBEvqa5wglAn3kxrd3c-fp0Nw2Qy5QUSs6HTWYah1tMrQhjX7i38U9qrfCn5QXkD-9cMmRLtdVS-9EVaZxQ=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Eglinton Valley</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3fMNp3y6x1ATkynB37EBbFr_WtYGHjoCsSbY6gdEoqLAjiZ6ZtrUs4sYKr3XRODfWSVNLCAQi0X27BXhjxyqdC8UYp72vGhLIT4ifEZm8JXANFxJXE_-gqUlNW_7Uw8XSnHY4BakCQsa5QQTc322DYk=w1800-h1029-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3fMNp3y6x1ATkynB37EBbFr_WtYGHjoCsSbY6gdEoqLAjiZ6ZtrUs4sYKr3XRODfWSVNLCAQi0X27BXhjxyqdC8UYp72vGhLIT4ifEZm8JXANFxJXE_-gqUlNW_7Uw8XSnHY4BakCQsa5QQTc322DYk=w1800-h1029-no?authuser=1" target="_blank"><p class="image-description">Lake Wakatipu</p></a>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="section-component grids gridasia hidden remove-tab">
+            <div class="section_head section_grid">
+                <h2 class="section_head_title">Asia</h2>
+                <button class="close-btn grids_close" id="asia_close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="outer-grid">
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3cVLOk9QmBTNiEhONKYCEDTOVL2SyV2jUV7SrY1A5H2MlsKBEL1BfZxN1W3pvJs52hjnVGCc-kLRNZbOEtP63lxiJBuqWTqTXNb67DREQnwB8Vanw61A8AiGUO1yBIyRyVNO5daI8CNzd48uB0eOto1=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3cVLOk9QmBTNiEhONKYCEDTOVL2SyV2jUV7SrY1A5H2MlsKBEL1BfZxN1W3pvJs52hjnVGCc-kLRNZbOEtP63lxiJBuqWTqTXNb67DREQnwB8Vanw61A8AiGUO1yBIyRyVNO5daI8CNzd48uB0eOto1=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Wat Arun Temples</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3chY2kk75vhgouy7OvRjecAhMTVrJgiOlG3DAtWXZ9PfGPEMJQipZ-umq_QY_6UCnjEGHkITyO4xwv5AzAWC9bSwWIw3w22KHkMPB61ZO5s7b9wuSpLzA6VxJATCTvvnwpVdJy_DjB2siZxEUv2J99K=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3chY2kk75vhgouy7OvRjecAhMTVrJgiOlG3DAtWXZ9PfGPEMJQipZ-umq_QY_6UCnjEGHkITyO4xwv5AzAWC9bSwWIw3w22KHkMPB61ZO5s7b9wuSpLzA6VxJATCTvvnwpVdJy_DjB2siZxEUv2J99K=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Elephants in Thailand</p></a>
+                    </div>
+                </div>
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3eUI7egVU1I7rRnuJH-H0rayo21BDjGN6kq8RGHlbHoVhLaCPr44yiBRlp0pXOt42DOIoZRyQmcp5mTt56BcFCwcjvHZNsCev58-OHoklwovV801YS7xfJEtaLcWs9OzaTyO5ES6kJDyPXik-i0gOAv=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3eUI7egVU1I7rRnuJH-H0rayo21BDjGN6kq8RGHlbHoVhLaCPr44yiBRlp0pXOt42DOIoZRyQmcp5mTt56BcFCwcjvHZNsCev58-OHoklwovV801YS7xfJEtaLcWs9OzaTyO5ES6kJDyPXik-i0gOAv=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Alleyway in Shibuya</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3cpgiJFCnb6UHG76rcY9myG-xnRsjpIMs-8zqmJQ4yM-Vo3-hIoE5rbcZWk95J_7cIFRSs0m_LJpJIzXNJGtISiOFJQuOWCjToOSHg9LGF1oU4okleszd4iHHjQN0XxJz3MHmvPJeJ9iL220X4wLr8-=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3cpgiJFCnb6UHG76rcY9myG-xnRsjpIMs-8zqmJQ4yM-Vo3-hIoE5rbcZWk95J_7cIFRSs0m_LJpJIzXNJGtISiOFJQuOWCjToOSHg9LGF1oU4okleszd4iHHjQN0XxJz3MHmvPJeJ9iL220X4wLr8-=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Great Wall Entrance</p></a>
+                    </div>
+                </div>
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3fGKUNk3MdhY4isa5_xpv_Qgi_x3IsUgy-wd9SH-PV33XQCvNoAQN77L_KZwzhUzUZTRfRPXeWD4Tr9lOwcCz6xw0iXoTfxjCiY9f4880qL3oBTXLOrKgBOhFzPt-2x7KcFM_kMX5o0XPq04PJcoZE2=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3fGKUNk3MdhY4isa5_xpv_Qgi_x3IsUgy-wd9SH-PV33XQCvNoAQN77L_KZwzhUzUZTRfRPXeWD4Tr9lOwcCz6xw0iXoTfxjCiY9f4880qL3oBTXLOrKgBOhFzPt-2x7KcFM_kMX5o0XPq04PJcoZE2=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Bike in Hanoi</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3fMGOaGV6nvJqvcJl2zSjG2XvTvmEF9jUk3GPzIC6oajiphWa1Usl4cDHozW_jB72ldX5kZUYvXBXzALXpctyipyctiKkenCHD_3mxJR5C4j0WFigYBeVTYexazh9wjA_Qjwe6QOEv4DxiI8WDM6AhP=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3fMGOaGV6nvJqvcJl2zSjG2XvTvmEF9jUk3GPzIC6oajiphWa1Usl4cDHozW_jB72ldX5kZUYvXBXzALXpctyipyctiKkenCHD_3mxJR5C4j0WFigYBeVTYexazh9wjA_Qjwe6QOEv4DxiI8WDM6AhP=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Ho Chi Minh Street Vendor</p></a>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="section-component grids gridaus hidden remove-tab">
+            <div class="section_head section_grid">
+                <h2 class="section_head_title">Sydney</h2>
+                <button class="close-btn grids_close" id="aus_close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="outer-grid">
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3egDDMws_mmt57p6ENG_1aKGhy37WpCOesrHjJOFOjDqclUd8qLEdV5LKlnCwt9RK_ZIA00xWhILV0exP7kuVHphKsyuVT-hzQwTs-7JmncEvBHZ2sZ7x113ztcVjDiTcpkOZmWIWLjaZC0OFK8S8WV=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3egDDMws_mmt57p6ENG_1aKGhy37WpCOesrHjJOFOjDqclUd8qLEdV5LKlnCwt9RK_ZIA00xWhILV0exP7kuVHphKsyuVT-hzQwTs-7JmncEvBHZ2sZ7x113ztcVjDiTcpkOZmWIWLjaZC0OFK8S8WV=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Palm Beach from Above</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3ePf5pwYc15tKA452ZZtZFiZAcvxu4e33SVciMTHmSVuagntPR4omlZ-whaYSsD2jBjbD5v_34XT0-EExcixkT6uzxDH3vONcZqa-m7cPQGsyoMbXXNOLYQTrkHgT2cb8SZfJob4bZ1zxGzYQ6v6tvi=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3ePf5pwYc15tKA452ZZtZFiZAcvxu4e33SVciMTHmSVuagntPR4omlZ-whaYSsD2jBjbD5v_34XT0-EExcixkT6uzxDH3vONcZqa-m7cPQGsyoMbXXNOLYQTrkHgT2cb8SZfJob4bZ1zxGzYQ6v6tvi=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Sydney Cliffside</p></a>
+                    </div>
+                </div>
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3eTF8bzmLi1HB0kfRituVfl7WLvs8NO9fiei8GTua0p7sNG1FUEm8dhXUCBfTxn4m66qxrS4F7k9xGI0isL3YcIpFDB3GD-6N-k5uAASE1qi0uFLWJm_KT7c1glyZxh4U9uYYlhPG9ObVrtE516uZ-U=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3eTF8bzmLi1HB0kfRituVfl7WLvs8NO9fiei8GTua0p7sNG1FUEm8dhXUCBfTxn4m66qxrS4F7k9xGI0isL3YcIpFDB3GD-6N-k5uAASE1qi0uFLWJm_KT7c1glyZxh4U9uYYlhPG9ObVrtE516uZ-U=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Watson's Bay</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3f7_ebNH5mK9RHmM7SsiaJvkLHPwwKlpdBWPQKXBGzXxCgcNXvVXCbSJqF3h2wYnW94HQQyE1RsjgG8OrR6T6Sm0H6rDM_b32fs-q1nmOylco-DG6fP0LuVnAqBZNNpDnqbnz5CpNXN9W3BMJiFPqX2=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3f7_ebNH5mK9RHmM7SsiaJvkLHPwwKlpdBWPQKXBGzXxCgcNXvVXCbSJqF3h2wYnW94HQQyE1RsjgG8OrR6T6Sm0H6rDM_b32fs-q1nmOylco-DG6fP0LuVnAqBZNNpDnqbnz5CpNXN9W3BMJiFPqX2=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Sydney New Years</p></a>
+                    </div>
+                </div>
+                <div class="inner-grid">
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3cfdautwLexxRPagaJLg8lb9EcGFz2h6-X6FlTUYAKr1MYfFM8ba_PmdsXFPVSyFek_nV8P8kC99YHGKau7vpQgejLjo5CDtU3fwWUN3cJtmzbvmzSEVshccGpMQNJ_xWUGNeRH-d0lZY_lv_CZ3gVn=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3cfdautwLexxRPagaJLg8lb9EcGFz2h6-X6FlTUYAKr1MYfFM8ba_PmdsXFPVSyFek_nV8P8kC99YHGKau7vpQgejLjo5CDtU3fwWUN3cJtmzbvmzSEVshccGpMQNJ_xWUGNeRH-d0lZY_lv_CZ3gVn=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Sydney CBD</p></a>
+                    </div>
+                    <div class="image-text">
+                        <img class="grid-photo" src="https://lh3.googleusercontent.com/pw/ACtC-3duifhQrwIy2rh_9X5XZK1k-2qgZse4KabmWma7Xg0TeES0yesmKvFpoYj2xxH-EdEGN9HFnDFdkdES2LKBoYlXrYJdCSIYkalXcQzyQ6BWad5P2Sgn-Rj0UX16ZNEOze9bUzgPE7Hz6FHoXBR2DUbb=w1920-h1080-no?authuser=1"/>
+                        <a href="https://lh3.googleusercontent.com/pw/ACtC-3duifhQrwIy2rh_9X5XZK1k-2qgZse4KabmWma7Xg0TeES0yesmKvFpoYj2xxH-EdEGN9HFnDFdkdES2LKBoYlXrYJdCSIYkalXcQzyQ6BWad5P2Sgn-Rj0UX16ZNEOze9bUzgPE7Hz6FHoXBR2DUbb=w1920-h1080-no?authuser=1" target="_blank"><p class="image-description">Sox hat in Sydney</p></a>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="section-component music hidden remove-tab">
+            <div class="section_head">
+                <h2 class="section_head_title">Music</h2>
+                <button class="close-btn music_close"><span class="iconify" data-icon="ant-design:close-circle-outlined" data-inline="false"></span></button>
+            </div>
+            <div class="section_container">
+                <p class="music_info">Outside of my work, I spend a lot of time with music. I own a record collection that I'm constantly adding to, and I'm proud of what I own so far.<br>
+                    <br>If you're curious about whether or not I own anything by a particular artist, type the artist's name in the search field below. If there's a match, you'll receive results letting you know of a project of theirs that is in my collection!<br>
+                    <div class="form_group">
+                        <input type="text" class="form_input" id="artist_search" placeholder="Artist name" required="" />
+                        <label for="name" class="form_label">Search for an Artist</label>
+                      </div>
+                      <div class="result_div">
+                          <p id="search_result"></p>
+                    </div>
+                    <div class="line_break"></div>                      
+                <br>If you'd like to take a listen to a Spotify playlist featuring some artists that are currently in my listening rotation, click the "Show / Hide" dropdown below to reveal an embedded Spotify iFrame. If you're more interested in a direct link to my full record catalogue, click on the "Discogs" button to open it in a new tab.</p>
+                <div class="music_btns">
+                    <button class="btn btn--small show-hide-btn mr-sm"><i class="fas fa-chevron-down"></i> Show Playlist / <i class="fas fa-chevron-up"></i> Hide Playlist</button>
+                    <a href="https://www.discogs.com/user/davidjl/collection" target="_blank"><button class="btn btn--small mr-sm" type="submit"><i class="far fa-plus-square"></i> Discogs</button></a>
+                </div>
+                <div class="line_break"></div>
+                <iframe src="https://open.spotify.com/embed/playlist/2aEqogSU05JRF5qyCicS6h" class="music_display collapsed" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
