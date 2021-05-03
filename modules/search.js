@@ -3,7 +3,7 @@ export const artistSearch = () => {
 const jsonconnect = {
     "async": true,
     "crossDomain": true,
-    "url": "https://github.com/davidjlanglois/davidjlanglois.github.io/blob/master/json/collection.json",
+    "url": "http://cors.io/?https://github.com/davidjlanglois/davidjlanglois.github.io/blob/master/json/collection.json",
     "method": "GET",
     };
 
