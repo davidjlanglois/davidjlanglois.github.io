@@ -1,0 +1,33 @@
+/*** GENERAL SECTION COMPONENT ***/
+.section-component {
+    position: absolute;
+    width: 70rem;
+
+    background-color: var(--section-bg-color-medium);
+}
+
+@media screen and (max-width: 660px) {
+    .section-component {
+        width: 100%;
+    }
+}
+
+.section_head {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+.section_head_title {
+    font-size: 2.5rem;
+}
+
+.section_container {
+    padding: 0 4rem 2rem 4rem;
+}
+
+@media screen and (max-width: 370px){
+    .section_container {
+        padding: 0 3rem 2rem 3rem;
+    }
+}

@@ -1,0 +1,93 @@
+/*** "PROJECTS" SECTION ***/
+.projects_cards {
+    display: flex;
+    justify-content: space-between;
+
+    overflow-x: auto;
+    scrollbar-color: var(--text-color-white) black;
+    scrollbar-width: thin;
+}
+/* Horizontal scrollbar in browsers other than Firefox */
+.projects_cards::-webkit-scrollbar-thumb {
+    background: var(--text-color-white);
+}
+.projects_cards::-webkit-scrollbar {
+    height: .6rem;
+    background: black;
+}
+
+@media screen and (min-width: 1300px){
+    .projects {
+        width: min-content;
+    }
+    .projects_cards {
+        width: min-content;
+    }
+}
+
+.card {
+    min-width: 28rem;
+    border-radius: 4px;
+    padding: .5rem;
+
+    background-color: var(--section-bg-color-dark);
+}
+
+.card:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.card_head {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+    .card_head {
+        flex-direction: row;
+    }
+}
+
+.card_head_title {
+    text-align: center;
+    font-weight: 500;
+}
+
+.card_head_tech {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .card_head_tech {
+        margin-left: auto;
+    }
+}
+
+.card_image {
+    width: 100%;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.card_btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.card_description {
+    font-weight: 300;
+}
+
+.card_description_link {
+    color: var(--text-color-white);
+    transition: color .2s;
+}
+.card_description_link:hover {
+    color: #bbbbbb;
+    transition: color .2s;
+}
+.card_description_link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--text-color-white);
+}

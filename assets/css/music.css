@@ -1,0 +1,57 @@
+.music_display{
+    width: 100%;
+    height: 35vh;
+}
+
+.music_btns {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.line_break {
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--text-color-white);
+}
+
+.music_info {
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.form_label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem !important;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+  }
+  
+  .form_input {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .form_input:placeholder-shown + .form_label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+
+  #search_result {
+    margin-top: 1rem;
+  }

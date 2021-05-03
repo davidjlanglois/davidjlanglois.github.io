@@ -1,0 +1,82 @@
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.section_head.section_grid {
+   border-bottom: solid 1px var(--text-color-white);
+   padding-bottom: 1rem;
+}
+
+section.section-component.grids.slidein {
+   width: 100rem;
+}
+
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 0 0.5rem 2rem 0.4rem;
+}
+.inner-grid {
+   flex: 30%;
+   max-width: 30%;
+   justify-content: center;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+   transition: 500ms ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 30%;
+      max-width: 50%;
+   }
+   section.section-component.grids.slidein {
+      width: auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 30%;
+      max-width: 90%;
+   }
+   section.section-component.grids.slidein {
+      width: auto;
+}
+}
+
+.image-text {
+    position: relative;
+    text-align: center;
+}
+
+.image-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 0%);
+    font-size: small;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .image-text:hover .image-description {
+    visibility: visible;
+    opacity: 1;
+  }
