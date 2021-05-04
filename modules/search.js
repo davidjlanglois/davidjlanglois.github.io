@@ -3,7 +3,7 @@ export const artistSearch = () => {
 const jsonconnect = {
     "async": true,
     "crossDomain": true,
-    "url": "http://cors.io/?https://primogenial-enginee.000webhostapp.com/public_html/json/collection.json",
+    "url": "http://cors.io/?https://primogenial-enginee.000webhostapp.com/json/collection.json",
     "method": "GET",
     };
 
